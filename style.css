@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'Popins';
+    src: url('fonts/Popins-Regular.woff2') format('woff2'),
+        url('fonts/Popins-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.woff2') format('woff2'),
+        url('fonts/Roboto-Regular.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Popins', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+:root {
+    --main-color: rgb(172, 115, 8);
+    --text-color: white;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.80rem;
+}
+
+h4 {
+    font-size: 0.90rem;
+}
+
+p {
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    padding: 50px 10%;
+    overflow: hidden;
+}
+
+.primary-btn {
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-weight: 500;
+}
+
+.logo-img-text img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.logo-img-text h3 {
+    color: var(--main-color);
+}
+
+.main-nav {
+    max-width: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.lists {
+    justify-content: end;
+    gap: 30px;
+}
+
+.lists a {
+    padding: 10px 10px;
+    font-weight: 500;
+    color: white;
+}
+
+.lists a:hover {
+    color: var(--main-color);
+    transition: 0.2s ease-out;
+}
+
+.primary-btn:hover {
+    transform: scale(1.2);
+}
+
+.primary-btn:hover {
+    transform: scale(1.2);
+}
+
+.primary-btn:active {
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    transition: .0.2s ease-out;
+}
+
+.about {
+    max-width: 100%;
+}
+.about-text{
+    max-width: 100%;
+}
+
+.about-text h1 {
+    margin-block: 20px;
+}
+
+.about-text h2 {
+    margin-block: 20px;
+}
+
+.about-text p {
+    margin-block: 20px;
+}
+
+.about-text h2 {
+    color: var(--main-color);
+}
+
+.about-container {
+    justify-content: space-between;
+}
+
+.about-img img {
+    max-width: 100%;
+    width: 500px;
+    border-radius: 50%;
+    filter: drop-shadow(10px 7px 10px var(--main-color));
+}
+
+
+.about-icons {
+    text-align: center;
+    margin-top: 30px;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.about-icons i {
+    padding: 10px 10px;
+    font-size: 20px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    color: white;
+}
+
+.about-icons i:nth-child(1) {
+    padding: 10px 15px;
+}
+
+.about-icons i:hover {
+    background-color: white;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    transition: .1s ease-out;
+    transform: scale(1.2);
+}
+
+.us-text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.us-container {
+    gap: 50px;
+}
+
+.us-img img {
+    max-width: 100%;
+    width: 500px;
+    border-radius: 20%;
+    filter: drop-shadow(4px 4px 10px var(--main-color));
+}
+
+.us-text span {
+    color: var(--main-color);
+}
+
+.us-text p {
+    line-height: 2.1;
+}
+
+.service-text {
+    text-align: center;
+}
+
+.service-box-item {
+    padding: 40px 40px;
+    text-align: center;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgb(26, 23, 23);
+    border-radius: 10%;
+}
+
+.service-box-item p {
+    font-size: 0.80rem;
+    line-height: 2;
+}
+
+.Service-section {
+    margin-top: 50px;
+}
+
+.service-box-item i {
+    color: var(--main-color);
+    font-size: 35px;
+}
+
+.service-box-item button {
+    border-radius: 20px;
+}
+
+.service-box {
+    gap: 20px;
+    padding-top: 50px;
+}
+@media screen and (max-width:991px) {
+    .main-nav{
+        justify-content: center;
+    }
+    .about-container{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text{
+        width: 100%;
+    }
+    .about-img{
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .about-icons{
+        margin-top: 40px;
+        justify-content: center;
+    }
+    .us-container{
+        flex-direction: column;
+    }
+    .us-text{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .service-box{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:768px) {
+    .lists a{
+        display: none;
+    }
+}
